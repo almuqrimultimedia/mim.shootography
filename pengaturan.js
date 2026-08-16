@@ -8,6 +8,6 @@ const CONFIG_APP = {
     namaVendor: "MiM Shootography",
 
     // 2. Google Drive API Key (Penting agar galeri bisa memuat foto)
-    googleApiKey: "AIzaSyAZczbLeVTXl-QKqLDJFWQLCd-lW9jqqxo",
+    googleApiKey: "AIzaSyA7pfFomlBu7CVtnYHy6cTCHsHOTEM0av8",
     whatsappAdmin: "6285156939177" // <-- TAMBAHKAN BARIS INI (Ganti dengan nomor WA admin)
 };
