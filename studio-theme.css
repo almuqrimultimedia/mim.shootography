@@ -63,6 +63,8 @@ html.dark {
 .studio-theme-btn:hover { color: white; background: rgba(255, 255, 255, .15); transform: translateY(-1px); }
 .studio-theme-btn.light-surface { color: var(--studio-text); border-color: var(--studio-border); background: var(--studio-surface-soft); }
 .studio-theme-btn.light-surface:hover { color: var(--studio-blue); background: var(--studio-surface-strong); }
+.studio-logo-box { padding: 6px; overflow: hidden; }
+.studio-logo-box img { width: 100%; height: 100%; object-fit: contain; }
 
 /* Public portfolio landing page */
 .home-app {

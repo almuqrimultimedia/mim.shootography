@@ -104,7 +104,7 @@ async function downloadStudioPackage(account) {
   if (typeof JSZip === "undefined") return;
   const zip = new JSZip();
   const files = ["index.html", "select.html", "login.html", "daftar.html", "dashboard.html", "demo.html", "sorter.html", "generator-link.html", "styles.css", "studio-theme.css", "studio-theme.js", "app.js", "pengaturan.js", "vercel.json", "README.md"];
-  const assetFiles = Array.from({ length: 12 }, (_, index) => `assets/portfolio-${String(index + 1).padStart(2, "0")}.jpg`);
+  const assetFiles = [...Array.from({ length: 12 }, (_, index) => `assets/portfolio-${String(index + 1).padStart(2, "0")}.jpg`), "assets/logo.png", "assets/favicon.png"];
   const lockedPage = title => `<!doctype html><html lang="id"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} — Menunggu Aktivasi</title><script>location.replace('dashboard.html?payment=required')<\/script></html>`;
   await Promise.all(files.map(async file => {
     try {
