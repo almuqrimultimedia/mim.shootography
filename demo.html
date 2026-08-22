@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Demo Sistem — MiM Shootography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="studio-theme.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="studio-theme.css">
+</head>
+<body class="studio-app studio-grid home-app demo-app">
+  <header class="site-header"><nav class="nav container"><a class="brand" href="index.html"><span class="brand-mark">M</span><span>MiM Shootography</span></a><button class="nav-toggle" onclick="toggleMenu()" aria-label="Buka menu"><i class="fa-solid fa-bars"></i></button><div class="nav-links"><a href="index.html">Beranda</a><a href="select.html">Seleksi Foto</a><a href="#fitur">Lihat demo</a><a href="login.html">Login</a></div><button type="button" class="studio-theme-btn light-surface home-theme-btn" onclick="toggleStudioTheme()" aria-label="Ganti tema"><i data-theme-icon class="fa-solid fa-moon"></i><span data-theme-label>Mode gelap</span></button><a class="button" href="daftar.html">Buat versi studiomu</a></nav></header>
+  <main>
+    <section class="demo-hero"><div class="container"><p class="eyebrow">Demo platform studio</p><h1>Alur kerja rapi, tanpa ribet.</h1><p>Coba halaman seleksi secara langsung. Untuk Sorter dan Generator Link, daftar lalu aktifkan paket Studio seharga Rp100.000.</p><div class="hero-actions" style="justify-content:center;margin-top:30px"><a class="button-dark" href="select.html" target="_blank">Coba Seleksi Foto</a><a class="button-ghost" href="daftar.html">Daftar studio</a></div></div></section>
+    <section class="demo-browser" id="fitur"><div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="browser-address">portal.studiomu.com/dashboard</span></div><div class="demo-content">
+      <article class="mini-card"><span class="feature-icon" style="color:var(--accent);border-color:var(--line)"><i class="fa-regular fa-images"></i></span><h3>Seleksi Foto</h3><p>Terbuka di demo. Unggah sumber Google Drive, pilih foto, tulis catatan, dan unduh daftar final.</p><a class="button-ghost" href="select.html" target="_blank">Buka demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+      <article class="mini-card locked"><span class="feature-icon"><i class="fa-solid fa-lock"></i></span><h3>Auto RAW Sorter</h3><p>Mencocokkan daftar pilihan dengan file RAW di folder kamera secara rekursif.</p><button class="button" onclick="openPaywall()">Lihat cara aktivasi</button></article>
+      <article class="mini-card locked"><span class="feature-icon"><i class="fa-solid fa-lock"></i></span><h3>Generator Link</h3><p>Membuat tautan klien dengan nama, kuota foto, folder sumber, dan pesan WhatsApp.</p><button class="button" onclick="openPaywall()">Lihat cara aktivasi</button></article>
+      <article class="mini-card"><span class="feature-icon" style="color:var(--accent);border-color:var(--line)"><i class="fa-solid fa-download"></i></span><h3>Website Milikmu</h3><p>Saat daftar, paket website diunduh dengan nama studio, email, dan WhatsApp yang kamu isi.</p><a class="button-ghost" href="daftar.html">Buat akun</a></article>
+    </div></section>
+  </main>
+  <div class="modal-backdrop" id="paywallModal"><div class="modal"><p class="eyebrow">Aktivasi studio</p><h2>Buka semua aplikasi</h2><p>Bayar satu kali <strong>Rp100.000</strong> melalui DANA atau GoPay, lalu kirim bukti transfer ke WhatsApp.</p><div class="payment-accounts"><div class="payment-account"><span>DANA</span><strong>0851-5693-9177</strong></div><div class="payment-account"><span>GOPAY</span><strong>0851-5693-9177</strong></div></div><div class="modal-actions"><button class="button-ghost" onclick="closePaywall()">Tutup</button><button class="button" onclick="paymentWhatsapp()"><i class="fa-brands fa-whatsapp"></i> Kirim bukti</button></div></div></div>
+  <footer class="site-footer"><div class="container footer-row"><span>© 2026 MiM Shootography.</span><span><a href="mailto:almuqrimultimedia@gmail.com">almuqrimultimedia@gmail.com</a></span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>

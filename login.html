@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login Studio — MiM Shootography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="studio-theme.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="studio-theme.css">
+</head>
+<body class="studio-app studio-grid auth-app">
+  <main class="auth-page">
+    <section class="auth-visual">
+      <img class="bg" src="assets/portfolio-11.jpg" alt="Karya pernikahan MiM Shootography">
+      <a class="brand" href="index.html"><span class="brand-mark">M</span><span>MiM Shootography</span></a>
+      <div><p class="eyebrow" style="color:#e1ad8c">Studio workspace</p><p class="auth-quote">Satu ruang kerja untuk alur studio yang lebih ringan.</p></div>
+    </section>
+    <section class="auth-panel"><div class="auth-box">
+      <div class="auth-toolbar"><a class="auth-home" href="index.html"><i class="fa-solid fa-house"></i> Home</a><button type="button" class="studio-theme-btn light-surface" onclick="toggleStudioTheme()"><i data-theme-icon class="fa-solid fa-moon"></i><span data-theme-label>Mode gelap</span></button></div>
+      <p class="eyebrow" style="margin-top:35px">Selamat datang kembali</p><h1>Login Studio</h1><p>Masuk untuk membuka dashboard, sorter, dan generator link klien.</p>
+      <div class="alert" data-alert></div>
+      <form onsubmit="login(event)">
+        <div class="form-group"><label for="email">Email</label><input class="input" id="email" type="email" autocomplete="email" placeholder="nama@studio.com" required></div>
+        <div class="form-group"><label for="password">Password</label><div class="input-wrap"><input class="input" id="password" type="password" autocomplete="current-password" placeholder="Masukkan password" required><button class="input-icon" type="button" onclick="togglePassword(this)" aria-label="Tampilkan password"><i class="fa-regular fa-eye"></i></button></div></div>
+        <button class="button-dark block" type="submit" style="margin-top:8px">Masuk ke dashboard <i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <p class="auth-footer">Belum punya akun? <a href="daftar.html">Daftar & unduh website</a></p>
+    </div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
